@@ -4,9 +4,7 @@ class CreateProducts < ActiveRecord::Migration
     	t.string :name
     	t.boolean :active, default: true
     	t.references :category
-    	t.float :halfltr
-    	t.float :oneltr
-    	t.float :sixltr
+    	t.float :price
       t.timestamps null: false
     end
   end

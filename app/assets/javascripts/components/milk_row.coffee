@@ -6,22 +6,22 @@
     totalrLtr: 0
     krtCount: 0
     ltrCount: 0
-    rate: @props.product.price
+    rate: @props.product
 
   componentValue: ->
-    {'halfkrt': @state.halfLtrKrt, 'fkrt': @state.fullLtrKrt, 'amount': @state.amount}
+    {'1/2lkrt': @state.halfLtrKrt, '1lkrt': @state.fullLtrKrt, '6lkrt': @state.sixLtrKrt,  'amount': @state.amount}
 
   componentWillMount: ->
     @props.owner.registerComponent(this) if @props.owner.registerComponent
 
-  calulateHalfLeter: (e) ->
+  calulateHalfLeter: (e) ->    
     if e.target.value.length > 0
       ltr=e.target.value*12 + @state.fullLtrKrt*12
     else
       ltr = @state.fullLtrKrt*12    
     @setState
       halfLtrKrt: e.target.value
-      amount: ltr*@state.rate
+      amount: ltr*@state.rate["1/2ltr"]
     @props.owner.setState({display: 'none'})
    
   calulateFullLeter: (e)->     
@@ -31,7 +31,7 @@
       ltr = @state.halfLtrKrt*12   
     @setState
       fullLtrKrt: e.target.value
-      amount: ltr*@state.rate
+      amount: ltr*@state.rate["1ltr"]
     @props.owner.setState({display: 'none'})
 
   calulateSixLeter: (e) ->
@@ -41,7 +41,7 @@
       ltr = @state.halfLtrKrt*12 + @state.fullLtrKrt*12
     @setState
       sixLtrKrt: e.target.value
-      amount: ltr*@state.rate
+      amount: ltr*@state.rate["6ltr"]
     @props.owner.setState({display: 'none'})
 
   calculateLtr: ->

@@ -1,12 +1,53 @@
-<%= render 'list' %>
-<%= form_for(@product) do |f| %>
-	<%=f.label :name %>
-	<%=f.text_field :name %>
-	<%=f.label :price, :rate %>
-	<%=f.text_field :price %>
-	<%=f.label :active %>
-	<%=f.text_field :active %>
-	<%=f.label :category %>
-	<%=f.select :category_id, Category.all.collect { |c| [ c.name, c.id ] }, include_blank: true %>
-	<%=f.submit %>
-<% end %>
+<div class="main-content-inner">
+	<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+		<ul class="breadcrumb">
+			<li>
+				<i class="ace-icon fa fa-home home-icon"></i>
+				<a href="#">Home</a>
+			</li>
+			<li class="active">Dashboard</li>
+		</ul><!-- /.breadcrumb -->
+
+		<div class="nav-search" id="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+					<i class="ace-icon fa fa-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div><!-- /.nav-search -->
+	</div>
+	<div class="page-content">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12">
+						<%= render 'list' %>
+						<%= form_for(@product) do |f| %>
+							<%=f.label :name %>
+							<%=f.text_field :name %>
+							<%=f.label :active %>
+							<%=f.text_field :active %>	
+							<% if params[:category] %>
+								<%= f.hidden_field :category_id, value: 2 %>
+								<%= f.fields_for :liters do |l| %>
+								<%= l.hidden_field :package_id %>
+								<%= l.object.package.name %>
+								<%= l.text_field :price %>
+								<% end %>
+							<% else %>
+								<%=f.label :category %>
+							    <%=f.select :category_id, @category.collect { |c| [ c.name, c.id ] }, include_blank: true %>
+								<%= f.label :price %>
+								<%= f.text_field :price %>
+							<% end %>
+							<%=f.submit %>
+						<% end %>
+		      </div>
+	      </div>
+			</div>
+		</div>
+	</div>
+</div>
+			
+			

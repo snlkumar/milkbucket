@@ -1,4 +1,4 @@
-.calculate{
+/*.calculate{
 	background-color: red;
 	color: white;
 }
@@ -6,4 +6,39 @@
 .save{
 	background-color: Green;
 	color: white;
+}
+.table input{
+  width: 100% !important;
+}*/
+.table input{
+  width: 100% !important;
+}
+input[type="text"].credited-amount{
+	padding: 0px !important;
+	margin-bottom: -5px !important;
+}
+.report-button{
+	margin-top: 4%;
+}
+.report-button .btn {
+    margin-right: 5%;
+	}
+.input-group-addon{
+	padding: 0 18px !important;
+}
+
+.red{
+	color: red;
+}
+
+.green{
+	color: green;
+}
+
+.yellow{
+	color: yellow;
+}
+
+.purple{
+	color: purple;
 }

@@ -1,11 +1,16 @@
 class ProductsController < ApplicationController
 	before_action :common
 	def index
-		@product = Product.new		
+		@product = Product.new
+		@category = Category.all.select {|x| x.name != 'Milk'}
+		Package.all.each { |p|
+			@product.liters.build(package_id: p.id)
+		} if params[:category]
 	end
 
-	def create
+	def create		
 		@product = Product.new params[:product].permit!
+		debugger
 		if @product.save
 			redirect_to products_path
 		else
