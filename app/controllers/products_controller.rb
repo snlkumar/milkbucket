@@ -9,17 +9,12 @@ class ProductsController < ApplicationController
 	end
 
 	def create		
-		@product = Product.new params[:product].permit!
-		debugger
+		@product = Product.new params[:product].permit!		
 		if @product.save
 			redirect_to products_path
 		else
 			render 'index'
-		end
-		# valid = false
-		# html = render_to_string(:partial => "list",:layout => false)
-		# valid = true if product.save
-		# render json: {valid: valid, html: html}
+		end		
 	end
 
 	def edit
