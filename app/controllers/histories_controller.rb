@@ -3,6 +3,7 @@ class HistoriesController < ApplicationController
 		@history = History.new
 		@milk = Product.milk
 		@dahi = Product.dahi
+		debugger
 	end
 
 	def create

@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-     get 'products/milk' => 'products#index', defaults: {category: 'milk' }
-     get 'products' => 'products#index'
-     post :add_cash, to: "histories#add_cash", as: :add_cash
+    get 'products/milk' => 'products#index', defaults: {category: 'Milk' }
+    get 'products/dahi' => 'products#index', defaults: {category: 'Dahi' }
+    get 'products' => 'products#index'
+    post :add_cash, to: "histories#add_cash", as: :add_cash
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

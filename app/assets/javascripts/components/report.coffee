@@ -58,7 +58,7 @@
                   <div className="col-xs-6">
                     <span>To</span>
                     <div className="input-group input-group-sm">
-                      <DatePicker addClass="input-field align-center" showSelected={@state.endDate} onSelect={@setEndDate} calendar='false'/>
+                      <DatePicker addClass="input-field align-center form-cont" showSelected={@state.endDate} onSelect={@setEndDate} calendar='false'/>
                       <span className="input-group-addon">
                         <i className="ace-icon fa fa-calendar"></i>
                       </span>

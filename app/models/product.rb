@@ -15,6 +15,7 @@ class Product < ActiveRecord::Base
 	end
 
 	def get_price(name)
+		debugger
 		pkgid= Package.where(name: name).first.id
 		self.liters.detect {|x| x.package_id == pkgid}.try(:price)
 	end

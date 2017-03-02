@@ -8,7 +8,8 @@ class ProductsController < ApplicationController
 		} if params[:category]
 	end
 
-	def create		
+	def create	
+	   debugger	
 		@product = Product.new params[:product].permit!		
 		if @product.save
 			redirect_to products_path
@@ -19,6 +20,7 @@ class ProductsController < ApplicationController
 
 	def edit
 		@products = Product.all
+		@category = Category.all
 		render 'index'
 	end
 
