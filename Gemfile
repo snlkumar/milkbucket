@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-gem 'pg'
+
 # gem 'rails_12factor'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -50,6 +50,7 @@ group :development do
 end
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'pg'
 end
 
 
