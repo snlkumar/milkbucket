@@ -30,6 +30,16 @@ Rails.application.routes.draw do
       end
     end
 
+    resources :clients do
+      member do
+        get :new_order, :orders, :routines
+      end
+      resources :orders
+      resources :items
+    end
+
+    
+
 
   # Example resource route with options:
   #   resources :products do

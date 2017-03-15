@@ -8,8 +8,7 @@ class ProductsController < ApplicationController
 		} if params[:category]
 	end
 
-	def create	
-	   debugger	
+	def create
 		@product = Product.new params[:product].permit!		
 		if @product.save
 			redirect_to products_path
