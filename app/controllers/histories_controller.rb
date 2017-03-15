@@ -3,14 +3,13 @@ class HistoriesController < ApplicationController
 		@history = History.new
 		@milk = Product.milk
 		@dahi = Product.dahi
-		debugger
+		
 	end
 
 	def create
 		status = false		
-    @history = History.new history_params.permit!
-    status = true if @history.save
-    debugger
+	    @history = History.new history_params.permit!
+	    status = true if @history.save	    
 		render json: {status: status, errors: @history.errors.full_messages[0], message: " Order Created Successfully."}		
 	end
 

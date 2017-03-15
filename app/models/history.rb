@@ -11,8 +11,7 @@ class History < ActiveRecord::Base
   def calculate_balance
     last = History.last
     last_balance = last ? last.balance.to_i : 0
-    self.balance = self.credit ? self.credit.to_i+last_balance : last_balance-self.debit.to_i
-    debugger
+    self.balance = self.credit ? self.credit.to_i+last_balance : last_balance-self.debit.to_i    
   end
   
   private

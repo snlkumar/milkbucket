@@ -1,0 +1,86 @@
+<% tab "clients" %>
+<div class="main-content-inner">
+	<div id="breadcrumbs" class="breadcrumbs ace-save-state">
+		<ul class="breadcrumb">
+			<li>
+				<i class="ace-icon fa fa-home home-icon"></i>
+				<a href="#">Home</a>
+			</li>
+			<li class="active">Clients</li>
+		</ul><!-- /.breadcrumb -->
+
+		<div id="nav-search" class="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" autocomplete="off" id="nav-search-input" class="nav-search-input" placeholder="Search ...">
+					<i class="ace-icon fa fa-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div><!-- /.nav-search -->
+	</div>
+	<div class="page-content">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="widget-box transparent">
+							<div class="widget-header widget-header-flat">
+								<h4 class="widget-title lighter">
+								  <i class="ace-icon fa fa-star orange"></i>
+								  Clients 
+								</h4>
+							</div>
+							<div class="widget-body">
+								<div class="widget-main no-padding">
+									<table class="table table-bordered table-striped">
+										<thead class="thin-border-bottom">
+											<tr>
+												<th></th>
+												<th>Name</th>
+												<th>Action</th>											
+											</tr>
+										</thead>
+										<tbody>
+											<% @clients.each_with_index do |client, i| %>
+												<tr>
+													<td><%=i+1 %></td>
+													<td><%=client.name %> </td>
+													<td><%= link_to 'Edit', edit_client_path(client)  %>	|  <%= link_to 'New Order', new_order_client_path(client)  %> | <%= link_to 'View Orders', routines_client_path(client)  %></td>									
+												</tr>	
+											<% end %>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="widget-box transparent">
+							<div class="widget-header widget-header-flat">
+								<h4 class="widget-title lighter">
+								  <i class="ace-icon fa fa-star orange"></i>
+								  Add Client
+								</h4>
+							</div>
+							<div class="widget-body">
+								<div class="widget-main no-padding">
+									<%= form_for(@client) do |f| %>
+									  <div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right">Name</label>
+											<div class="col-sm-9">
+												<div class="pos-rel">
+													<%=f.text_field :name,placeholder: "Name", class: "filter form-control" %>												
+												</div>
+											</div>
+										</div><br/>
+										<%= f.submit "Save", class: "btn btn-success" %>															
+									<% end %>
+								</div>								
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
