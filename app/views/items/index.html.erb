@@ -5,7 +5,7 @@
 				<i class="ace-icon fa fa-home home-icon"></i>
 				<a href="#">Home</a>
 			</li>
-			<li class="active">Dashboard</li>
+			<li class="active">Items</li>
 		</ul><!-- /.breadcrumb -->
 
 		<div class="nav-search" id="nav-search">
@@ -21,9 +21,15 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="row">
-					<div class="col-xs-12">						
-						<%= render 'form' %>
-						<%= render 'list' %>
+					<div class="col-xs-12">
+						<% if flash[:notice] || flash[:error]%>
+						  <% klass= flash[:notice] ? 'success' : 'danger' %>
+							<div  class="alert alert-block alert-<%= klass%>">
+							  <%= flash[:notice] || flash[:error]%>
+							</div>
+						<% end %>
+						<%= render 'form' %><br>
+						<%= render 'items' if @items %>						
 		      </div>
 	      </div>
 			</div>

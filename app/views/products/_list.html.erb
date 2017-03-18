@@ -2,21 +2,31 @@
 	<thead>
 		<tr>
 			<th>Name</th>
-			<th>Rate</th>
-			<th>Active</th>
+			<th>Rate</th>			
 			<th>Action</th>
 		</tr>
-	</thead>
+	</thead>	
 	<tbody>
-		<% @products.each do |p| %>
-			<tr>
-				<td><%= p.name %> </td>
-				<td><%= p.price %> </td>
-				<td><%= p.active %> </td>
-				<td>
-					<%= link_to 'edit', edit_product_path(p.id)  %>
-				</td>
-			</tr>
+		<% if params[:category] == 'Milk' %>
+		  <% @products.each do |p| %>
+				<tr>
+					<td><%= p.name %> </td>
+					<td><%= p.show_price %> </td>				
+					<td>
+						<%= link_to 'edit', edit_product_path(p.id, category: 'Milk')  %>
+					</td>
+				</tr>
+			<% end %>
+		<% else %>
+			<% @products.each do |p| %>
+				<tr>
+					<td><%= p.name %> </td>
+					<td><%= p.price %> </td>				
+					<td>
+						<%= link_to 'edit', edit_product_path(p.id)  %>
+					</td>
+				</tr>
+			<% end %>
 		<% end %>
 	</tbody>
 </table>

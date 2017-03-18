@@ -3,8 +3,17 @@ class Product < ActiveRecord::Base
 	has_many :packages, through: :liters
 	has_many :liters
 	accepts_nested_attributes_for :liters, :reject_if => :all_blank, :allow_destroy => true
-  accepts_nested_attributes_for :packages
+    accepts_nested_attributes_for :packages
 	class << self
+		def milk_products
+			Category.where(name: 'Milk').first.products
+		end
+
+		def allwm
+			milk = Category.where(name: 'Milk').first
+			where.not(category: milk.try(:id))
+		end
+
 		def milk
 			Category.where(name: 'Milk').first.products.map(&:milk_response)
 		end
@@ -25,5 +34,9 @@ class Product < ActiveRecord::Base
 
 	def dahi_response
 		{name: name, category: 'Dahi', price: price}
+	end
+
+	def show_price
+		liters.map{|x| [x.package.name, x.price]}.to_h
 	end
 end

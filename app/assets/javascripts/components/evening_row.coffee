@@ -5,7 +5,7 @@
   particular: ->
     if @props.order.particular
       order =JSON.parse @props.order.particular
-      JSON.stringify(order.milk)
+      [JSON.stringify(order)]
 
   render: ->    
     <tr>

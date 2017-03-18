@@ -17,15 +17,15 @@ class ProductsController < ApplicationController
 		end		
 	end
 
-	def edit
-		@products = Product.all
-		@category = Category.all
+	def edit		
+		@category = Category.all.select {|x| x.name != 'Milk'}
 		render 'index'
 	end
 
-	def update	
+	def update
 		if @product.update_attributes params[:product].permit!
-			redirect_to products_path
+			path = params[:category] ? products_path(category: 'Milk') : products_path
+			redirect_to path
 		else
 			render 'index'
 		end			
@@ -38,7 +38,7 @@ class ProductsController < ApplicationController
 
 	private
 	def common		
-		@products = Product.all
+		@products = params[:category] ? Product.milk_products : Product.allwm
 		if %w(edit update destroy).include? params[:action]
 			@product = Product.find params[:id]
 		end

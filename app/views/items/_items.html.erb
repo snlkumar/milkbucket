@@ -1,0 +1,21 @@
+<table id="simple-table" class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Rate/KG</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @items.each do |item| %>
+			<tr>
+				<td><%= item.name %> </td>
+				<td><%= item.price %> </td>
+				<td>
+					<%= link_to 'edit',  edit_client_item_path(@client, item)  %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+

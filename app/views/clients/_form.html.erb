@@ -45,7 +45,7 @@
 												<tr>
 													<td><%=i+1 %></td>
 													<td><%=client.name %> </td>
-													<td><%= link_to 'Edit', edit_client_path(client)  %>	|  <%= link_to 'New Order', new_order_client_path(client)  %> | <%= link_to 'View Orders', routines_client_path(client)  %></td>									
+													<td><%= link_to 'Items', client_items_path(client)  %> | <%= link_to 'Edit', edit_client_path(client)  %>	|  <%= link_to 'New Order', new_order_client_path(client)  %> | <%= link_to 'View Orders', routines_client_path(client)  %></td>									
 												</tr>	
 											<% end %>
 										</tbody>

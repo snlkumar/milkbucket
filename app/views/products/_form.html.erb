@@ -1,0 +1,19 @@
+<%= form_for(@product) do |f| %>
+	<%=f.label :name %>
+	<%=f.text_field :name, placeholder: "Name" %>
+	<% if params[:category] %>
+	  <%= hidden_field_tag :category, 'Milk' %>
+		<%= f.hidden_field :category_id, value: category_id %>
+		<%= f.fields_for :liters do |l| %>
+		<%= l.hidden_field :package_id %>
+		<%= l.object.package.name %>
+		<%= l.text_field :price, placeholder: 'Rate' %>
+		<% end %>
+	<% else %>
+		<%=f.label :category %>
+	    <%=f.select :category_id, @category.collect { |c| [ c.name, c.id ] }, selected: true %>
+		<%= f.label :price %>
+		<%= f.text_field :price, placeholder: 'Rate' %>
+	<% end %>
+	<%=f.submit nil, class: "btn btn-primary" %>
+<% end %><br>

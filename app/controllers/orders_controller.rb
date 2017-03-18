@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
 	def new
 	end
 
-	def create
+	def create		
 		@order=Order.new params[:order].permit!
 		@order.save
 		redirect_to routines_client_path(@client)

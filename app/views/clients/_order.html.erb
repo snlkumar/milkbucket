@@ -31,7 +31,7 @@
                 </tr>
               </thead>
               <tbody>
-                <%= form_for [@client, @order] do |f| %>
+                <%= form_for [@client, @order], html: {class: 'form-horizontal'} do |f| %>
                   <%=f.hidden_field :client_id %>
                   <%=f.fields_for :order_items do |oi| %>
                     <tr>
@@ -39,13 +39,13 @@
                       <%= oi.hidden_field :item_id %>
                       <%= oi.hidden_field :order_id %>
                       <td>
-                      <%= oi.text_field :quantity, :onkeyup => 'calculatePrice(this)', price: oi.object.item.price, itemid: oi.object.item.id %> </td>
+                      <%= oi.text_field :quantity, :oninput => 'calculatePrice(this)', price: oi.object.item.price, itemid: oi.object.item.id %> </td>
                       <td>
                         <%= oi.text_field :price, class: "amount-row#{oi.object.item.id}", readonly: true %>
                       </td>
                     </tr>
-                  <% end %>
-                  <%= f.submit %>
+                  <% end %>                  
+                  <tr><%= f.submit nil,class: "btn btn-sm btn-success"%></tr>
                 <% end %>
               </tbody>
             </table>
