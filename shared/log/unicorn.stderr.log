@@ -1,0 +1,291 @@
+E, [2017-04-11T00:07:30.406989 #21859] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-11T00:07:30.407130 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-11T00:07:30.407160 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-11T00:07:30.407190 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-11T00:07:30.407217 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-11T00:07:30.407248 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-11T00:07:30.407274 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-11T00:07:30.407308 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-11T00:07:30.407342 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-11T00:07:30.407370 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-11T00:07:30.407396 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-11T00:07:30.407414 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-11T00:07:30.407438 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-11T00:07:30.407464 #21859] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-11T00:13:24.035505 #21857] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-11T00:13:24.035602 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-11T00:13:24.035635 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-11T00:13:24.035663 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-11T00:13:24.035686 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-11T00:13:24.035720 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-11T00:13:24.035741 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-11T00:13:24.035757 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-11T00:13:24.035782 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-11T00:13:24.035823 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-11T00:13:24.035882 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-11T00:13:24.035900 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-11T00:13:24.035915 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-11T00:13:24.035930 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-11T00:14:19.605366 #21857] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-11T00:14:19.605473 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-11T00:14:19.605506 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-11T00:14:19.605535 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-11T00:14:19.605601 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-11T00:14:19.605637 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-11T00:14:19.605671 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-11T00:14:19.605705 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-11T00:14:19.605738 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-11T00:14:19.605767 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-11T00:14:19.605795 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-11T00:14:19.605824 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-11T00:14:19.605849 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-11T00:14:19.605882 #21857] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+/home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:21854 (or pid=/home/krishna/workspace/milkbucket/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:137:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+/home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:21854 (or pid=/home/krishna/workspace/milkbucket/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:137:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+/home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:21854 (or pid=/home/krishna/workspace/milkbucket/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:137:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-04-11T00:17:41.408418 #22085]  INFO -- : Refreshing Gem list
+I, [2017-04-11T00:17:43.369807 #22085]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-11T00:17:43.370180 #22085]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-11T00:17:43.370365 #22085]  INFO -- : worker=0 spawning...
+I, [2017-04-11T00:17:43.371687 #22085]  INFO -- : worker=1 spawning...
+I, [2017-04-11T00:17:43.373110 #22085]  INFO -- : master process ready
+I, [2017-04-11T00:17:43.377900 #22096]  INFO -- : worker=0 spawned pid=22096
+I, [2017-04-11T00:17:43.382293 #22096]  INFO -- : worker=0 ready
+I, [2017-04-11T00:17:43.383628 #22098]  INFO -- : worker=1 spawned pid=22098
+I, [2017-04-11T00:17:43.383938 #22098]  INFO -- : worker=1 ready
+/home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:22085 (or pid=/home/krishna/workspace/milkbucket/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:137:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-04-11T00:21:34.458400 #22167]  INFO -- : Refreshing Gem list
+I, [2017-04-11T00:21:36.302721 #22167]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-11T00:21:36.303120 #22167]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-11T00:21:36.303307 #22167]  INFO -- : worker=0 spawning...
+I, [2017-04-11T00:21:36.304583 #22167]  INFO -- : worker=1 spawning...
+I, [2017-04-11T00:21:36.305938 #22167]  INFO -- : master process ready
+I, [2017-04-11T00:21:36.311106 #22178]  INFO -- : worker=0 spawned pid=22178
+I, [2017-04-11T00:21:36.314116 #22178]  INFO -- : worker=0 ready
+I, [2017-04-11T00:21:36.315224 #22180]  INFO -- : worker=1 spawned pid=22180
+I, [2017-04-11T00:21:36.315520 #22180]  INFO -- : worker=1 ready
+I, [2017-04-11T00:31:56.198334 #22338]  INFO -- : Refreshing Gem list
+I, [2017-04-11T00:31:58.310937 #22338]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-11T00:31:58.311358 #22338]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-11T00:31:58.311539 #22338]  INFO -- : worker=0 spawning...
+I, [2017-04-11T00:31:58.312875 #22338]  INFO -- : worker=1 spawning...
+I, [2017-04-11T00:31:58.313846 #22349]  INFO -- : worker=0 spawned pid=22349
+I, [2017-04-11T00:31:58.315286 #22338]  INFO -- : master process ready
+I, [2017-04-11T00:31:58.321959 #22349]  INFO -- : worker=0 ready
+I, [2017-04-11T00:31:58.323156 #22352]  INFO -- : worker=1 spawned pid=22352
+I, [2017-04-11T00:31:58.323452 #22352]  INFO -- : worker=1 ready
+I, [2017-04-11T00:33:04.251061 #22338]  INFO -- : reaped #<Process::Status: pid 22349 exit 0> worker=0
+I, [2017-04-11T00:33:04.251174 #22338]  INFO -- : reaped #<Process::Status: pid 22352 exit 0> worker=1
+I, [2017-04-11T00:33:04.251261 #22338]  INFO -- : master complete
+I, [2017-04-13T22:24:35.824791 #2812]  INFO -- : Refreshing Gem list
+I, [2017-04-13T22:24:42.216477 #2812]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-13T22:24:42.216631 #2812]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-13T22:24:42.216809 #2812]  INFO -- : worker=0 spawning...
+I, [2017-04-13T22:24:42.217638 #2812]  INFO -- : worker=1 spawning...
+I, [2017-04-13T22:24:42.219531 #2812]  INFO -- : master process ready
+I, [2017-04-13T22:24:42.227403 #2815]  INFO -- : worker=0 spawned pid=2815
+I, [2017-04-13T22:24:42.227838 #2815]  INFO -- : worker=0 ready
+I, [2017-04-13T22:24:42.232468 #2817]  INFO -- : worker=1 spawned pid=2817
+I, [2017-04-13T22:24:42.232730 #2817]  INFO -- : worker=1 ready
+E, [2017-04-13T22:24:46.391149 #2815] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:24:46.391315 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:24:46.391348 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:24:46.391371 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:24:46.391394 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:24:46.391420 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:24:46.391444 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:24:46.391467 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:24:46.391489 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:24:46.391583 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:24:46.391609 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:24:46.391624 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:24:46.391707 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:24:46.391723 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:24:50.090628 #2817] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:24:50.090770 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:24:50.090802 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:24:50.090833 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:24:50.090858 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:24:50.090876 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:24:50.090898 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:24:50.090924 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:24:50.090941 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:24:50.090964 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:24:50.090985 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:24:50.091058 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:24:50.091071 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:24:50.091093 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:24:56.264801 #2817] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:24:56.264881 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:24:56.264904 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:24:56.264924 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:24:56.264941 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:24:56.264959 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:24:56.264976 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:24:56.264990 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:24:56.265003 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:24:56.265020 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:24:56.265034 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:24:56.265049 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:24:56.265065 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:24:56.265078 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:24:59.670826 #2817] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:24:59.670902 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:24:59.670931 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:24:59.671027 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:24:59.671043 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:24:59.671057 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:24:59.671070 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:24:59.671083 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:24:59.671096 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:24:59.671108 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:24:59.671121 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:24:59.671134 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:24:59.671146 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:24:59.671158 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:25:39.672708 #2815] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:25:39.672868 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:25:39.672911 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:25:39.672940 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:25:39.672969 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:25:39.673000 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:25:39.673026 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:25:39.673048 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:25:39.673070 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:25:39.673095 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:25:39.673117 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:25:39.673138 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:25:39.673163 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:25:39.673188 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:25:39.809933 #2817] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:25:39.810044 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:25:39.810072 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:25:39.810089 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:25:39.810103 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:25:39.810122 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:25:39.810140 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:25:39.810154 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:25:39.810171 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:25:39.810185 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:25:39.810203 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:25:39.810217 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:25:39.810230 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:25:39.810247 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:26:38.961563 #2815] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:26:38.961657 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:26:38.961684 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:26:38.961704 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:26:38.961827 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:26:38.961854 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:26:38.961934 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:26:38.961966 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:26:38.961994 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:26:38.962021 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:26:38.962044 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:26:38.962067 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:26:38.962090 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:26:38.962118 #2815] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-04-13T22:28:34.950966 #2817] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2017-04-13T22:28:34.951046 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2017-04-13T22:28:34.951075 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2017-04-13T22:28:34.951096 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2017-04-13T22:28:34.951112 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2017-04-13T22:28:34.951131 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-04-13T22:28:34.951146 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-04-13T22:28:34.951160 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-04-13T22:28:34.951178 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-04-13T22:28:34.951196 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+E, [2017-04-13T22:28:34.951214 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+E, [2017-04-13T22:28:34.951229 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+E, [2017-04-13T22:28:34.951249 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-04-13T22:28:34.951268 #2817] ERROR -- : /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-04-13T23:14:53.303580 #3545]  INFO -- : Refreshing Gem list
+I, [2017-04-13T23:14:55.835011 #3545]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-13T23:14:55.835359 #3545]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-13T23:14:55.835514 #3545]  INFO -- : worker=0 spawning...
+I, [2017-04-13T23:14:55.836587 #3545]  INFO -- : worker=1 spawning...
+I, [2017-04-13T23:14:55.837916 #3545]  INFO -- : master process ready
+I, [2017-04-13T23:14:55.844277 #3556]  INFO -- : worker=0 spawned pid=3556
+I, [2017-04-13T23:14:55.848259 #3556]  INFO -- : worker=0 ready
+I, [2017-04-13T23:14:55.849406 #3558]  INFO -- : worker=1 spawned pid=3558
+I, [2017-04-13T23:14:55.851776 #3558]  INFO -- : worker=1 ready
+I, [2017-04-13T23:18:52.615721 #3545]  INFO -- : reaped #<Process::Status: pid 3556 exit 0> worker=0
+I, [2017-04-13T23:18:52.615829 #3545]  INFO -- : reaped #<Process::Status: pid 3558 exit 0> worker=1
+I, [2017-04-13T23:18:52.615900 #3545]  INFO -- : master complete
+I, [2017-04-13T23:50:13.782885 #2957]  INFO -- : Refreshing Gem list
+I, [2017-04-13T23:50:19.176301 #2957]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-13T23:50:19.176449 #2957]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-13T23:50:19.176539 #2957]  INFO -- : worker=0 spawning...
+I, [2017-04-13T23:50:19.177399 #2957]  INFO -- : worker=1 spawning...
+I, [2017-04-13T23:50:19.178208 #2957]  INFO -- : master process ready
+I, [2017-04-13T23:50:19.184301 #2960]  INFO -- : worker=0 spawned pid=2960
+I, [2017-04-13T23:50:19.184576 #2960]  INFO -- : worker=0 ready
+I, [2017-04-13T23:50:19.185505 #2962]  INFO -- : worker=1 spawned pid=2962
+I, [2017-04-13T23:50:19.185674 #2962]  INFO -- : worker=1 ready
+I, [2017-04-13T23:51:24.387172 #2957]  INFO -- : reaped #<Process::Status: pid 2960 exit 0> worker=0
+I, [2017-04-13T23:51:24.387314 #2957]  INFO -- : reaped #<Process::Status: pid 2962 exit 0> worker=1
+I, [2017-04-13T23:51:24.387396 #2957]  INFO -- : master complete
+I, [2017-04-15T16:15:41.071128 #3139]  INFO -- : Refreshing Gem list
+I, [2017-04-15T16:15:47.306512 #3139]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-15T16:15:47.306862 #3139]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-15T16:15:47.307049 #3139]  INFO -- : worker=0 spawning...
+I, [2017-04-15T16:15:47.308080 #3139]  INFO -- : worker=1 spawning...
+I, [2017-04-15T16:15:47.309127 #3139]  INFO -- : master process ready
+I, [2017-04-15T16:15:47.315950 #3151]  INFO -- : worker=0 spawned pid=3151
+I, [2017-04-15T16:15:47.316313 #3151]  INFO -- : worker=0 ready
+I, [2017-04-15T16:15:47.317300 #3153]  INFO -- : worker=1 spawned pid=3153
+I, [2017-04-15T16:15:47.319640 #3153]  INFO -- : worker=1 ready
+/home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:3139 (or pid=/home/krishna/workspace/milkbucket/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:137:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/gems/unicorn-5.3.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/unicorn:23:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-04-15T16:21:53.233284 #3273]  INFO -- : Refreshing Gem list
+I, [2017-04-15T16:21:55.239462 #3273]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-15T16:21:55.239824 #3273]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-15T16:21:55.239990 #3273]  INFO -- : worker=0 spawning...
+I, [2017-04-15T16:21:55.241169 #3273]  INFO -- : worker=1 spawning...
+I, [2017-04-15T16:21:55.242383 #3273]  INFO -- : master process ready
+I, [2017-04-15T16:21:55.246919 #3284]  INFO -- : worker=0 spawned pid=3284
+I, [2017-04-15T16:21:55.250008 #3284]  INFO -- : worker=0 ready
+I, [2017-04-15T16:21:55.251016 #3286]  INFO -- : worker=1 spawned pid=3286
+I, [2017-04-15T16:21:55.251238 #3286]  INFO -- : worker=1 ready
+I, [2017-04-15T16:23:08.774882 #3273]  INFO -- : reaped #<Process::Status: pid 3284 exit 0> worker=0
+I, [2017-04-15T16:23:08.774984 #3273]  INFO -- : reaped #<Process::Status: pid 3286 exit 0> worker=1
+I, [2017-04-15T16:23:08.775058 #3273]  INFO -- : master complete
+I, [2017-04-15T16:23:46.699885 #1774]  INFO -- : Refreshing Gem list
+I, [2017-04-15T16:23:54.578611 #1774]  INFO -- : unlinking existing socket=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock
+I, [2017-04-15T16:23:54.578765 #1774]  INFO -- : listening on addr=/home/krishna/workspace/milkbucket/shared/sockets/unicorn.sock fd=8
+I, [2017-04-15T16:23:54.578867 #1774]  INFO -- : worker=0 spawning...
+I, [2017-04-15T16:23:54.579892 #1774]  INFO -- : worker=1 spawning...
+I, [2017-04-15T16:23:54.581194 #1774]  INFO -- : master process ready
+I, [2017-04-15T16:23:54.585313 #1777]  INFO -- : worker=0 spawned pid=1777
+I, [2017-04-15T16:23:54.585503 #1777]  INFO -- : worker=0 ready
+I, [2017-04-15T16:23:54.589286 #1779]  INFO -- : worker=1 spawned pid=1779
+I, [2017-04-15T16:23:54.589538 #1779]  INFO -- : worker=1 ready

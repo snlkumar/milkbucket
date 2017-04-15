@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20170308170030) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.date     "order_date", default: '2017-03-08'
+    t.date     "order_date", default: '2017-04-10'
     t.integer  "client_id"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
