@@ -42,3 +42,7 @@ input[type="text"].credited-amount{
 .purple{
 	color: purple;
 }
+
+span label{
+	margin-right: 10px !important;
+}

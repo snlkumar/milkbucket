@@ -6,6 +6,7 @@
     totalrLtr: 0
     krtCount: 0
     ltrCount: 0
+    amount: 0
     rate: @props.product
 
   componentValue: ->
@@ -15,23 +16,31 @@
     @props.owner.registerComponent(this) if @props.owner.registerComponent
 
   calulateHalfLeter: (e) ->    
+    amount=0.0
     if e.target.value.length > 0
-      ltr=e.target.value*12 + @state.fullLtrKrt*12
+      ltr=e.target.value*12
+      stamount = (@state.fullLtrKrt*12) * @state.rate["1ltr"]
+      amount = parseFloat(stamount.toFixed 2)+parseFloat((ltr*@state.rate["1/2ltr"]).toFixed 2)
     else
-      ltr = @state.fullLtrKrt*12    
+      ltr = @state.fullLtrKrt*12   
+      amount=  (ltr*@state.rate["1ltr"]).toFixed 2 
     @setState
       halfLtrKrt: e.target.value
-      amount: ltr*@state.rate["1/2ltr"]
+      amount: parseFloat(amount).toFixed 2
     @props.owner.setState({display: 'none'})
    
-  calulateFullLeter: (e)->     
+  calulateFullLeter: (e)->
+    amount = 0.0
     if e.target.value.length > 0
-      ltr=e.target.value*12 + @state.halfLtrKrt*12
+      ltr=e.target.value*12
+      stamount = (@state.halfLtrKrt*12) * @state.rate["1/2ltr"]
+      amount = parseFloat(stamount.toFixed 2)+parseFloat((ltr*@state.rate["1ltr"]).toFixed 2)
     else
       ltr = @state.halfLtrKrt*12   
+      amount = (ltr*@state.rate["1/2ltr"]).toFixed 2    
     @setState
       fullLtrKrt: e.target.value
-      amount: ltr*@state.rate["1ltr"]
+      amount: parseFloat(amount).toFixed 2
     @props.owner.setState({display: 'none'})
 
   calulateSixLeter: (e) ->
@@ -41,7 +50,7 @@
       ltr = @state.halfLtrKrt*12 + @state.fullLtrKrt*12
     @setState
       sixLtrKrt: e.target.value
-      amount: ltr*@state.rate["6ltr"]
+      amount: (ltr*@state.rate["6ltr"]).toFixed(2)
     @props.owner.setState({display: 'none'})
 
   calculateLtr: ->
@@ -64,5 +73,5 @@
       <td><input type='text' name='6ltr' onChange={@calulateSixLeter} /> </td>
       <td><input type='text' name='totalkrt' value={@totalKrt()} /></td>
       <td><input type='text' name='total in ltr' value={@calculateLtr()} /></td>
-      <td><input type='text' name='total amount' value={@state.amount} /></td>
+      <td><input type='text' name='total amount' value={@state.amount } /></td>
     </tr>

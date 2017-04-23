@@ -2,7 +2,7 @@
   getInitialState: ->   
     krt: 0
     rate: @props.product.price
-    amount: 0
+    amount: 0.0
     name: @props.product.name
 
   componentValue: ->
@@ -12,7 +12,7 @@
     @props.owner.registerComponent(this) if @props.owner.registerComponent
 
   setKrt: (e) ->    
-    amount = @state.rate * e.target.value
+    amount = (@state.rate * e.target.value).toFixed 2
     @setState
       krt: e.target.value
       amount: amount

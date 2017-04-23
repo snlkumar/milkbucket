@@ -2,9 +2,9 @@
   arrComponents: []
   getInitialState: ->
     milkKrate: 0
-    milkAmount: 0    
+    milkAmount: 0.0  
     dahiKrate: 0
-    dahiAmount: 0
+    dahiAmount: 0.0
     sloat: 'M'
     creditedAmount: 0
     checked: true
@@ -33,21 +33,21 @@
 
   calculateAmount: ->    
     mkrt = 0
-    milk = 0
+    milk = 0.0
     dahi = 0
     dkrt = 0
     for component in @arrComponents
-      if component.state.amount        
+      if component.state.amount             
         if component.props.product.category == 'Milk' 
-          milk = milk + component.state.amount
+          milk = parseFloat(milk) + parseFloat(component.state.amount)
           mkrt = mkrt + component.totalKrt()
         else if component.props.product.category == 'Dahi' 
-          dahi = dahi + component.state.amount
+          dahi = parseFloat(dahi) + parseFloat(component.state.amount)
           dkrt = dkrt + parseInt(component.state.krt)    
     @setState
-      milkAmount: milk
+      milkAmount: milk.toFixed 2
       milkKrate: mkrt
-      dahiAmount: dahi
+      dahiAmount: dahi.toFixed 2
       dahiKrate: dkrt
       display: "inline"
     
@@ -81,14 +81,6 @@
             message: result.errors
         return
       ).bind(this)
-      
-    #$.post "/histories", {'data': data, 'sloat': @state.sloat, 'credited': @state.creditedAmount}, (result) ->
-    #  if result.status
-    #    debugger
-    #    alert result.message
-    
-    
-    
 
   render: ->
     <div className="main-content-inner">
@@ -115,7 +107,7 @@
                   <h3 className="row header smaller lighter orange">
                     <span>
                       <label className="pull-left inline">
-                        Total Amount: {@state.dahiAmount + @state.milkAmount}
+                        Total Amount: {parseFloat(@state.dahiAmount) + parseFloat(@state.milkAmount)}
                       </label>                      
                     </span>
                   </h3> 
