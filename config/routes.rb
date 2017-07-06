@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'categories#new'
+  root 'histories#new'
 
   # Example of regular route:
     get 'products/milk' => 'products#index', defaults: {category: 'Milk' }
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     resources :histories do
       collection do
         get :cash
-        # post :add_cash
+        post :save_data
       end
     end
     resources :categories

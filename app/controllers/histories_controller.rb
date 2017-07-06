@@ -2,8 +2,7 @@ class HistoriesController < ApplicationController
 	def new
 		@history = History.new
 		@milk = Product.milk
-		@dahi = Product.dahi
-		
+		@dahi = Product.dahi		
 	end
 
 	def create
@@ -23,8 +22,20 @@ class HistoriesController < ApplicationController
 			redirect_to cash_histories_path
 		end
 	end
+
+	def destroy
+		history = History.find params[:id]
+		
+		if history.destroy
+			render json: {status: true}
+		else
+			render json: {status: true}
+		end
+	end
+
 	private
 	def history_params
+		p params
 		change_param = params[:order]
 		change_param[:particular] = change_param[:particular].to_json
 		change_param

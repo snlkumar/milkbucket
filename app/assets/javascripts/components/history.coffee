@@ -53,7 +53,7 @@
     
 
   saveData: ->
-    data = {'totoal Amount': @state.dahiAmount + @state.milkAmount }
+    data = {'totoal Amount': parseFloat(@state.dahiAmount) + parseFloat(@state.milkAmount) }
     milkData = {'totoal Amount': @state.milkAmount, 'total Krate': @state.milkKrate}
     dahiData = {'totoal Amount': @state.dahiAmount, 'total Krate': @state.dahiKrate}    
     for component in @arrComponents
@@ -107,7 +107,7 @@
                   <h3 className="row header smaller lighter orange">
                     <span>
                       <label className="pull-left inline">
-                        Total Amount: {parseFloat(@state.dahiAmount) + parseFloat(@state.milkAmount)}
+                        Total Amount: {(parseFloat(@state.dahiAmount) + parseFloat(@state.milkAmount)).toFixed 2}
                       </label>                      
                     </span>
                   </h3> 

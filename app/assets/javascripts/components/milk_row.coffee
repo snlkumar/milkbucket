@@ -44,10 +44,14 @@
     @props.owner.setState({display: 'none'})
 
   calulateSixLeter: (e) ->
+    amount = 0.0
     if e.target.value.length > 0
-      ltr= e.target.value*12 + @state.halfLtrKrt*12 + @state.fullLtrKrt*12
+      ltr= e.target.value*12 
+      stamount= ((@state.halfLtrKrt*12) * @state.rate["1/2ltr"])+((@state.fullLtrKrt*12) * @state.rate["1ltr"])
+      amount = parseFloat(stamount.toFixed 2)+parseFloat((ltr*@state.rate["6ltr"]).toFixed 2)
     else
-      ltr = @state.halfLtrKrt*12 + @state.fullLtrKrt*12
+      ltr = ((@state.halfLtrKrt*12) * @state.rate["1/2ltr"])+((@state.fullLtrKrt*12) * @state.rate["1ltr"])
+      amount = ltr.toFixed 2
     @setState
       sixLtrKrt: e.target.value
       amount: (ltr*@state.rate["6ltr"]).toFixed(2)

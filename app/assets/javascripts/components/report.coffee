@@ -85,11 +85,12 @@
                           <th>Debit</th>
                           <th>Credit</th>
                           <th>Balance</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         {@state.data.map(((x, i)->                          
-                          <EveningRow order={x} key={i}/>
+                          <EveningRow order={x} key={i} showReport={@showReport}/>
                         ).bind(this))
                         }
                         
